@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <p>VIRAJ shekhda</p>  
+    </head>
+    <body>
+        <script>
+            function sum(a,b){
+                return a+b;
+                document.write(a+b);
+            }
+            function takevalue(){
+                var inpu = prompt("1st number" );
+                var inpu1 = prompt("2nd number" );
+                var sumans = sum(inpu,inpu1);
+                if(inpu!= null && inpu!=""){
+                    document.write(sumans);
+                }                                                   
+            }
+        </script>
+        <input type="button" value="takevalue" onclick="takevalue()"/>
+    </body>
+</html>

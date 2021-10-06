@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <script>
+
+            //simple alert
+            function msgbox(){
+                alert('welcome to my akert box');
+            }
+            //confrimation box
+            function showconfirm(){
+                var mycnfrm = confirm("are you sure");
+                if(mycnfrm == true){
+                        alert("data submitted");
+                }
+                else{
+                    alert("data not submitted");
+                }
+            }
+
+            function takevalue(){
+                var inpu = prompt("write down you rname" );
+                if(inpu!= null && inpu!=""){
+                    document.write("done" + "you written correct ");
+                }                                                   
+            }
+            function sum(a,b){
+                document.write(a,b);
+            }
+
+            sum(5,5);
+
+            function sum1(a,b){
+                return a * b;
+            }
+
+            var ans = sum1(5,5);
+            document.write(ans);
+            </script>
+
+            <input type="button" value="Alert" onclick="msgbox()"/>
+            <input type="button" value="confirm" onclick="showconfirm()"/>
+            <input type="button" value="takevalue" onclick="takevalue()"/>
+
+    </body>
+</html>
